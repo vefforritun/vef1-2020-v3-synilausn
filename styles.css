@@ -1,0 +1,148 @@
+/*
+Hér gætum við sett in reset á vafra stílum en sleppum
+og lögum allt „handvirkt“.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 1rem;
+  width: 100%;
+
+  background-color: #eee;
+}
+
+header h1 {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+
+  font-size: 2rem;
+  line-height: 1;
+}
+
+main {
+  margin: 5rem auto 0;
+  max-width: 1000px;
+}
+
+main > p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* clearfix */
+ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  float: left;
+  margin: 1%;
+  border: 1px dotted #333;
+  width: 31.3333333333%;
+  box-sizing: border-box;
+}
+
+ul li a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  min-height: 6rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+ul li a:hover,
+ul li a:focus {
+  background-color: #999;
+}
+
+/* Sögur */
+
+h2 {
+  margin: 2rem 0;
+  font-size: 4rem;
+}
+
+h3 {
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section:hover p {
+  background-color: #999;
+}
+
+section p {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem; /* 24 */
+}
+
+section > p:first-of-type:first-line {
+  font-size: 1.875em; /* 45 */
+}
+
+section > p:first-of-type:first-letter {
+  font-size: 90px; /* 90  */
+}
+
+section img {
+  float: left;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+
+  background-color: #eee;
+}
+
+/* ósýnilegt nema fyrir skjálesurum */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
